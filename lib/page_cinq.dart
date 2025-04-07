@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login.dart'; // 🔁 Assure-toi que ce chemin est correct selon ton projet
 
 class PageCinq extends StatelessWidget {
   @override
@@ -65,7 +66,10 @@ class PageCinq extends StatelessWidget {
             // 📌 Bouton "GET STARTED"
             ElevatedButton(
               onPressed: () {
-                // Ajouter l'action pour démarrer l'application
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green,
