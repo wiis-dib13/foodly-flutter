@@ -22,11 +22,10 @@ Designed with a clean UI and smooth navigation, Foodly aims to enhance the digit
 ##  Captures d'écran
 ### image du logo : ![logo](https://github.com/user-attachments/assets/55828066-dbdd-4fa2-86a9-e05d9abaf994)
 
-| Écran d’accueil | Détails d’un plat | Édition profil |
-|----------------|-------------------|----------------|
-| ![Home](assets/screens/home.png) | ![Details](assets/screens/details.png) | ![Profile](assets/screens/edit.png) |
+### navigation 
+Home -> on bording_screen <-> page2 <-> page3 <-> page4 <->page5 <-> login <-> food_explore  (1)<-> food_details <->commentaire (2)calendar_page ->personal_recipe (3) edit_profile ->personal dishes_screen <-> (2)recently used
 
-#exemple de user story (jira):
+## exemple de user story (jira):
 
 ![pr7](https://github.com/user-attachments/assets/d534e2f0-81eb-4ecc-ae85-052b38f3d97d)
 
