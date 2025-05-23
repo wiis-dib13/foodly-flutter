@@ -1,16 +1,34 @@
-# mon_projet
+# 🍽️ Foodly – Flutter App
 
-A new Flutter project.
+Une application mobile Flutter moderne pour explorer des plats, voir les détails, gérer son profil, et découvrir de nouvelles recettes.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Fonctionnalités principales
 
-A few resources to get you started if this is your first Flutter project:
+- 🔐 Page de login & inscription
+- 🧭 Onboarding interactif
+- 🍕 Exploration des plats par catégorie (Entrée, Dessert, Principal, Boisson)
+- 📋 Détails de chaque plat (image, description, ingrédients)
+- 📝 Édition du profil utilisateur
+- 📅 Accès à un calendrier (gestion des repas à venir)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🖼️ Captures d'écran
+
+| Écran d’accueil | Détails d’un plat | Édition profil |
+|----------------|-------------------|----------------|
+| ![Home](assets/screens/home.png) | ![Details](assets/screens/details.png) | ![Profile](assets/screens/edit.png) |
+
+*(Ajoute tes vraies captures dans `assets/screens/`)*
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/wiis-dib13/foodly-flutter.git
+cd foodly-flutter
+flutter pub get
+flutter run
