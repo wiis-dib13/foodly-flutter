@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
-import 'onboarding_screen.dart';
-import 'login.dart';
-// Import de l'écran onboarding
-// Import de la deuxième page
+import 'edit_profile.dart';
+import 'personal_dishes.dart';
+import 'recently_used.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(), // Lancer sur OnboardingScreen
+      home: EditProfileApp(), 
     );
   }
 }
