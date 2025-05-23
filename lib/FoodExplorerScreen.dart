@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'AllCategoriesScreen.dart'; // Assurez-vous que AllCategoriesScreen est importé
+import 'AllCategoriesScreen.dart';
 import 'FoodDetailsScreen.dart';
+import 'edit_profile.dart';
+import 'calendar_page.dart';
 
 class FoodExplorerScreen extends StatelessWidget {
   final List<Map<String, dynamic>> categories = [
@@ -64,8 +66,26 @@ class FoodExplorerScreen extends StatelessWidget {
           children: [
             Image.asset("assets/logo.png", height: 50),
             const Spacer(),
-            const CircleAvatar(
-              backgroundImage: AssetImage("assets/profile.jpg"),
+            IconButton(
+              icon: const Icon(Icons.calendar_today, color: Colors.black),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CalendarPage()),
+                );
+              },
+            ),
+            const SizedBox(width: 8),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => EditProfilePage()),
+                );
+              },
+              child: const CircleAvatar(
+                backgroundImage: AssetImage("assets/profile.jpg"),
+              ),
             ),
           ],
         ),
@@ -75,8 +95,10 @@ class FoodExplorerScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text("Hey Halal, Good Afternoon",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+            const Text(
+              "Hey Halal, Good Afternoon",
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            ),
             const SizedBox(height: 10),
             TextField(
               decoration: InputDecoration(
@@ -91,7 +113,6 @@ class FoodExplorerScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            // Section des boutons avec défilement horizontal pour les petites tailles d'écran
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -105,10 +126,11 @@ class FoodExplorerScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const Text("Dishes",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Text(
+              "Dishes",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
             const SizedBox(height: 10),
-            // Grid view pour afficher les plats en fonction de la catégorie sélectionnée
             Expanded(
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -138,7 +160,8 @@ class FoodExplorerScreen extends StatelessWidget {
                     },
                     child: Card(
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       elevation: 4,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -157,22 +180,31 @@ class FoodExplorerScreen extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(item["title"],
-                                    style: const TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold)),
-                                Text(item["category"],
-                                    style: const TextStyle(
-                                        fontSize: 12, color: Colors.grey)),
+                                Text(
+                                  item["title"],
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  item["category"],
+                                  style: const TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                  ),
+                                ),
                                 Row(
                                   children: [
-                                    const Icon(Icons.star,
-                                        size: 16, color: Colors.orange),
+                                    const Icon(Icons.star, size: 16, color: Colors.orange),
                                     const SizedBox(width: 4),
-                                    Text(item["rating"].toString(),
-                                        style: const TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold)),
+                                    Text(
+                                      item["rating"].toString(),
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ],
@@ -191,8 +223,12 @@ class FoodExplorerScreen extends StatelessWidget {
     );
   }
 
-  // Fonction pour créer chaque bouton de catégorie avec une icône et un style CSS personnalisé
-  Widget _buildCategoryButton(BuildContext context, String categoryName, IconData icon, Widget? page) {
+  Widget _buildCategoryButton(
+    BuildContext context,
+    String categoryName,
+    IconData icon,
+    Widget? page,
+  ) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: ElevatedButton(
@@ -203,22 +239,26 @@ class FoodExplorerScreen extends StatelessWidget {
               MaterialPageRoute(builder: (context) => page),
             );
           } else {
-            // Ajoutez votre logique de filtrage si nécessaire pour les autres catégories.
             print("Category clicked: $categoryName");
           }
         },
         style: ElevatedButton.styleFrom(
-          foregroundColor: Colors.white, backgroundColor: Colors.blueAccent, padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14), // Texte en blanc
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.blueAccent,
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12), // Coins arrondis
+            borderRadius: BorderRadius.circular(12),
           ),
-          side: BorderSide(color: Colors.white, width: 2), // Bordure blanche
+          side: BorderSide(color: Colors.white, width: 2),
         ),
         child: Row(
           children: [
-            Icon(icon, size: 28, color: Colors.white), // Icône pour la catégorie
+            Icon(icon, size: 28, color: Colors.white),
             const SizedBox(width: 8),
-            Text(categoryName, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            Text(
+              categoryName,
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),
