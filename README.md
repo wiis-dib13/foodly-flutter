@@ -16,12 +16,14 @@ Une application mobile Flutter moderne pour explorer des plats, voir les détail
 ---
 
 ## 🖼️ Captures d'écran
+### image du logo : ![logo](https://github.com/user-attachments/assets/55828066-dbdd-4fa2-86a9-e05d9abaf994)
 
 | Écran d’accueil | Détails d’un plat | Édition profil |
 |----------------|-------------------|----------------|
 | ![Home](assets/screens/home.png) | ![Details](assets/screens/details.png) | ![Profile](assets/screens/edit.png) |
 
 *(Ajoute tes vraies captures dans `assets/screens/`)*
+
 
 ---
 
