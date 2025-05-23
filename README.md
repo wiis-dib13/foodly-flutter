@@ -34,3 +34,4 @@ git clone https://github.com/wiis-dib13/foodly-flutter.git
 cd foodly-flutter
 flutter pub get
 flutter run
+![pr8](https://github.com/user-attachments/assets/75d5a621-21f5-452d-9d2a-5d496044e5c1)
