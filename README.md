@@ -7,27 +7,27 @@ Une application mobile Flutter moderne pour explorer des plats, voir les détail
 ## ✨ Fonctionnalités principales
 
 - 🔐 Page de login & inscription
-- 🧭 Onboarding interactif
-- 🍕 Exploration des plats par catégorie (Entrée, Dessert, Principal, Boisson)
-- 📋 Détails de chaque plat (image, description, ingrédients)
-- 📝 Édition du profil utilisateur
-- 📅 Accès à un calendrier (gestion des repas à venir)
+-  Onboarding interactif
+-  Exploration des plats par catégorie (Entrée, Dessert, Principal, Boisson)
+-  Détails de chaque plat (image, description, ingrédients)
+-  Édition du profil utilisateur
+-  Accès à un calendrier (gestion des repas à venir)
 
 ---
 
-## 🖼️ Captures d'écran
+##  Captures d'écran
 ### image du logo : ![logo](https://github.com/user-attachments/assets/55828066-dbdd-4fa2-86a9-e05d9abaf994)
 
 | Écran d’accueil | Détails d’un plat | Édition profil |
 |----------------|-------------------|----------------|
 | ![Home](assets/screens/home.png) | ![Details](assets/screens/details.png) | ![Profile](assets/screens/edit.png) |
 
-*(Ajoute tes vraies captures dans `assets/screens/`)*
+#exemple de user story (jira):
+
+![pr7](https://github.com/user-attachments/assets/d534e2f0-81eb-4ecc-ae85-052b38f3d97d)
 
 
----
-
-## 🚀 Installation
+## Installation
 
 ```bash
 git clone https://github.com/wiis-dib13/foodly-flutter.git
