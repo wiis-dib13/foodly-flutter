@@ -1,8 +1,12 @@
 # 🍽️ Foodly – Flutter App
 
 Une application mobile Flutter moderne pour explorer des plats, voir les détails, gérer son profil, et découvrir de nouvelles recettes.
-
----
+----
+# Description :
+Foodly is a cross-platform mobile application built with Flutter that allows users to explore a variety of dishes, view detailed information, manage their personal profile, and plan meals using a built-in calendar.
+The app features a modern onboarding experience, user authentication (login/signup), categorized food browsing (Starters, Main Courses, Desserts, Drinks), and personalized profile editing.
+Designed with a clean UI and smooth navigation, Foodly aims to enhance the digital culinary experience.
+----
 
 ## ✨ Fonctionnalités principales
 
@@ -34,4 +38,4 @@ git clone https://github.com/wiis-dib13/foodly-flutter.git
 cd foodly-flutter
 flutter pub get
 flutter run
-![pr8](https://github.com/user-attachments/assets/75d5a621-21f5-452d-9d2a-5d496044e5c1)
+
