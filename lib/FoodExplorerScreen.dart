@@ -10,7 +10,7 @@ class FoodExplorerScreen extends StatelessWidget {
       "title": "Pizza",
       "category": "Principal",
       "rating": 4,
-      "image": 'assets/images/pizza.jpg',
+      "image": 'assets/pizza.png',
       "description": "Une pizza savoureuse avec du fromage fondant et des légumes frais.",
       "ingredients": ["Pâte", "Fromage", "Tomates", "Poivrons", "Champignons"]
     },
@@ -18,7 +18,7 @@ class FoodExplorerScreen extends StatelessWidget {
       "title": "Cheese Cake",
       "category": "Dessert",
       "rating": 4.5,
-      "image": 'assets/images/cheesecake.jpg',
+      "image": 'assets/cake.jpg',
       "description": "Un cheesecake onctueux avec une base de biscuit croustillant.",
       "ingredients": ["Biscuit", "Fromage frais", "Sucre", "Vanille", "Œufs"]
     },
@@ -26,7 +26,7 @@ class FoodExplorerScreen extends StatelessWidget {
       "title": "Salade César",
       "category": "Entrée",
       "rating": 4,
-      "image": 'assets/images/salade.jpg',
+      "image": 'assets/salade.jpg',
       "description": "Salade croquante accompagnée de poulet grillé et de sauce césar.",
       "ingredients": ["Laitue", "Poulet", "Croûtons", "Parmesan", "Sauce César"]
     },
@@ -34,7 +34,7 @@ class FoodExplorerScreen extends StatelessWidget {
       "title": "Bourek",
       "category": "Entrée",
       "rating": 5,
-      "image": 'assets/images/bourek.jpg',
+      "image": 'assets/bourak.jpg',
       "description": "Délicieux bourek farci de viande hachée et fromage, croustillant à souhait.",
       "ingredients": ["Feuilles de brick", "Viande hachée", "Oignons", "Fromage", "Œufs"]
     },
@@ -42,7 +42,7 @@ class FoodExplorerScreen extends StatelessWidget {
       "title": "Jus d'orange",
       "category": "Boisson",
       "rating": 5,
-      "image": 'assets/images/jus.jpg',
+      "image": 'assets/jus.jpg',
       "description": "Un jus d'orange frais, naturel et riche en vitamine C.",
       "ingredients": ["Oranges", "Sucre", "Eau"]
     },
@@ -50,7 +50,7 @@ class FoodExplorerScreen extends StatelessWidget {
       "title": "Café",
       "category": "Boisson",
       "rating": 4.7,
-      "image": 'assets/images/cafe.jpg',
+      "image": 'assets/cafe.jpg',
       "description": "Un café chaud et fort, parfait pour commencer la journée.",
       "ingredients": ["Café moulu", "Eau", "Sucre"]
     },
@@ -84,7 +84,7 @@ class FoodExplorerScreen extends StatelessWidget {
                 );
               },
               child: const CircleAvatar(
-                backgroundImage: AssetImage("assets/profile.jpg"),
+                backgroundImage: AssetImage("assets/logo.png"),
               ),
             ),
           ],
