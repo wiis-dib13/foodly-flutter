@@ -61,7 +61,20 @@ flutter:
 
   assets:
     - assets/logo.png
-    - assets/top_decor.png
+    - assets/pho1.png
+    - assets/pho2.png
+    - assets/pho3.png
+    - assets/pho4.png
+    - assets/pho5.png
+    - assets/pizza.png
+    - assets/salade.jpg
+    - assets/bourak.jpg
+    - assets/cafe.jpg
+    - assets/jus.jpg   
+    - assets/cake.jpg 
+
+
+
  
 
 
