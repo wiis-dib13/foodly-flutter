@@ -24,7 +24,12 @@ Designed with a clean UI and smooth navigation, Foodly aims to enhance the digit
 
 ### navigation 
 Home -> on bording_screen <-> page2 <-> page3 <-> page4 <->page5 <-> login <-> food_explore  (1)<-> food_details <->commentaire (2)calendar_page ->personal_recipe (3) edit_profile ->personal dishes_screen <-> (2)recently used
+### capture de figma :
+![capture1](https://github.com/user-attachments/assets/83fee8ea-a0b8-4ef9-87d9-72d3af5bb8c7)
+![capture2](https://github.com/user-attachments/assets/33879e6d-96e5-4199-96e8-57d9901ce9db)
+![capture3](https://github.com/user-attachments/assets/a5d069fd-55e5-4aec-b666-2ccf45dc81e1)
 
+![capture4](https://github.com/user-attachments/assets/33a29419-4813-45a8-accc-c21de72f2d3b)
 ## exemple de user story (jira):
 
 ![pr7](https://github.com/user-attachments/assets/d534e2f0-81eb-4ecc-ae85-052b38f3d97d)
@@ -37,4 +42,6 @@ git clone https://github.com/wiis-dib13/foodly-flutter.git
 cd foodly-flutter
 flutter pub get
 flutter run
+
+
 
